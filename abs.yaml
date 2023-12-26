@@ -1,4 +1,4 @@
-# aggregate_branch: "3.12"
+aggregate_branch: "3.12"
 
 channels:
   # for srsly 2.4.8:
