@@ -1,1 +1,7 @@
 aggregate_branch: 3.12
+
+channels:
+  # for catalogue 2.0.10:
+  - https://staging.continuum.io/prefect/fs/catalogue-feedstock/pr4/58d7da2
+  # for srsly 2.4.8:
+  - https://staging.continuum.io/prefect/fs/srsly-feedstock/pr8/ce69f6c

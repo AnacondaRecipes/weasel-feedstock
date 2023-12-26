@@ -45,7 +45,6 @@ test:
     - weasel --help
     - python -m pytest --tb=native --pyargs {{ name }}
 
-
 about:
   home: https://github.com/explosion/weasel
   license: MIT
