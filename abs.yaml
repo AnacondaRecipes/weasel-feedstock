@@ -1,7 +1,1 @@
 aggregate_branch: "3.12"
-
-channels:
-  # for srsly 2.4.8:
-  - https://staging.continuum.io/prefect/fs/srsly-feedstock/pr8/ce69f6c
-  # for confection 0.1.4
-  - https://staging.continuum.io/prefect/fs/confection-feedstock/pr3/ad2a7b8
