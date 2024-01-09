@@ -10,18 +10,19 @@ source:
   sha256: eb16f92dc9f1a3ffa89c165e3a9acd28018ebb656e0da4da02c0d7d8ae3f6178
 
 build:
-  noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vv
   entry_points:
     - weasel = weasel.cli:app
 
 requirements:
   host:
-    - python >=3.6
+    - python
     - pip
+    - setuptools
+    - wheel
   run:
-    - python >=3.6
+    - python
     - confection >=0.0.4,<0.2.0
     - packaging >=20.0
     - wasabi >=0.9.1,<1.2.0
@@ -43,7 +44,6 @@ test:
     - pip check
     - weasel --help
     - python -m pytest --tb=native --pyargs {{ name }}
-
 
 about:
   home: https://github.com/explosion/weasel
