@@ -43,7 +43,8 @@ test:
   commands:
     - pip check
     - weasel --help
-    - python -m pytest --tb=native --pyargs {{ name }}
+    # test_project_git requires git
+    - python -m pytest --tb=native --pyargs {{ name }} -k "not test_project_git"
 
 about:
   home: https://github.com/explosion/weasel
