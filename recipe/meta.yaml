@@ -50,6 +50,7 @@ test:
     - pip
     - pytest
     - requests
+    - git
   commands:
     - pip check
     - weasel --help
