@@ -29,7 +29,6 @@ requirements:
     - srsly >=2.4.3
     - typer >=0.3.0
     # Explicit click: typer 0.20+ (main) / >=0.26 (main-x) may omit click, breaking the CLI.
-    # Same pin as the spacy hotfix so py39 remains solvable on pkgs/main.
     - click >=8.1.8,<9.0.0
     - cloudpathlib >=0.7.0
     - smart_open >=5.2.1
